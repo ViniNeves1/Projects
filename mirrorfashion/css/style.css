@@ -248,7 +248,7 @@ footer .container {
     position: relative;
 }
 
-@media (max-widht: 320px) {
+@media (max-widht: 939px) {
     .container {
         width: 96%;
     }
@@ -284,6 +284,7 @@ footer .container {
 
     .painel {
         width: auto;
+        display: inline-block;
     }
 
     .painel li {
@@ -292,5 +293,50 @@ footer .container {
 
     .painel img {
         width: 100%;
+    }
+
+    footer {
+        padding-bottom: -50px;
+    }
+}
+
+@media (min-widht: 480px) {
+    header h1 {
+        margin: 5px 0;
+    }
+
+    .menu-departamentos {
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+
+    .menu-departamentos nav > ul {
+        column-count: 2;
+    }
+}
+
+@media (min-widht: 720px) {
+    header h1 {
+        text-align: left;
+    }
+    .menu-opcoes {
+        position: absolute;
+    }
+    .sacola {
+        display: block;
+    }
+    .painel li {
+        width: 15%;
+    }
+    .busca,
+    .menu-departamentos {
+        margin-right: 1%;
+        width: 30%;
+    }
+    .menu-departamentos nav > ul {
+        column-count: 1;
+    }
+    .banner-destaque img {
+        width: 69%;
     }
 }
